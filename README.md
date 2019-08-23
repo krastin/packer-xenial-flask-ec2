@@ -2,11 +2,11 @@
 A vagrant box based on ubuntu xenial with flask for virtualbox
 
 # Prerequisites
-## Install vagrant
-Grab vagrant and learn how to install it from [here](https://www.vagrantup.com/docs/installation/).
-
 ## Install packer
 Grab packer and learn how to install it from [here](https://www.packer.io/intro/getting-started/install.html).
+
+## Install aws-cli
+Grab aws-cli and learn how to install it from [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
 
 ## Install kitchen
 ToDo
@@ -22,7 +22,7 @@ ToDO
 
 # How to clean up
     
-    make
+    make clean
 
 
 # Purpose
@@ -32,7 +32,7 @@ This repository attempts to store the minimum amount of code that is required to
 - With Flask running in development mode on port 8080
 - with standard nginx rerouting port 80 to 8080
 - using Packer
-- for VirtualBox
+- for Amazon AWS EC2
 
 # To Do
 - [ ] add kitchen install instructions
