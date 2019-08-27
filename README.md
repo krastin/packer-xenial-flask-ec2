@@ -1,5 +1,5 @@
-# packer-xenial-flask
-A vagrant box based on ubuntu xenial with flask for virtualbox
+# packer-xenial-flask-ec2
+An EC2 AMI based on ubuntu xenial with flask
 
 # Prerequisites
 ## Install packer
@@ -13,17 +13,13 @@ ToDo
 
 # How to build
 
-    make
+    packer build template.json
+
     
 
 # How to test
 ToDO
     
-
-# How to clean up
-    
-    make clean
-
 
 # Purpose
 
@@ -43,6 +39,4 @@ This repository attempts to store the minimum amount of code that is required to
 - [x] add nginx to box
 - [x] add flask to box
 - [x] create json template file
-- [x] copy boot provisioning script
-- [x] create makefile
 - [x] build initial readme
