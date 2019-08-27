@@ -39,7 +39,7 @@ Description=Microwebsite application
 After=network.target
 
 [Service]
-User=vagrant
+User=flask
 WorkingDirectory=/home/flask/flask-website
 Environment=FLASK_ENV=development
 Environment=FLASK_APP=project.py
