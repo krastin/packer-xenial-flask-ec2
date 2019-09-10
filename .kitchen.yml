@@ -1,9 +1,8 @@
 ---
 driver:
   name: ec2
-  shared_credentials_profile: hashi
+  shared_credentials_profile: hashi # my own profile name in ~/.aws/credentials
   aws_ssh_key_id: krastin-key1 # my own aws ssh key name
-  #security_group_ids: ["sg-xxxxxxx"]
   region: eu-west-1
   instance_type: t2.micro
   associate_public_ip: true
