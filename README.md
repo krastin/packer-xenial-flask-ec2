@@ -1,6 +1,15 @@
 # packer-xenial-flask-ec2
 An EC2 AMI based on ubuntu xenial with flask
 
+# Purpose
+
+This repository attempts to store the minimum amount of code that is required to create a:
+- Ubuntu Xenial64 box
+- Flask running in development mode on port 8080
+- Standard NGINX reverse proxy from port 80 to 8080
+- using Packer
+- for Amazon AWS EC2
+
 # Prerequisites
 ## Install packer
 Grab packer and learn how to install it from [here](https://www.packer.io/intro/getting-started/install.html).
@@ -55,16 +64,16 @@ bundle install
 
 # How to test
     bundle exec kitchen test
-    
 
-# Purpose
+<details>
+  <summary>Separate steps when further troubleshooting is needed</summary>
 
-This repository attempts to store the minimum amount of code that is required to create a:
-- Ubuntu Xenial64 box
-- Flask running in development mode on port 8080
-- Standard NGINX reverse proxy from port 80 to 8080
-- using Packer
-- for Amazon AWS EC2
+  ````
+bundle exec kitchen converge # create testing resource
+bundle exec kitchen verify # run tests
+bundle exec kitchen destroy # destroy testing resource
+  ````
+</details>
 
 # To Do
 - [ ] create makefile
