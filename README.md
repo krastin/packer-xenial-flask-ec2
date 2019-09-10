@@ -58,6 +58,15 @@ gem install bundler
 bundle install
 ```
 
+### Have Kitchen tests use your own AWS account
+In order for kitchen to know where to create the testing node instance, modify the following parameters in the _.kitchen.yml_ file:
+- shared_credentials_profile
+- aws_ssh_key_id
+- ssh_key
+- owner-id
+
+The parameters should make sense for people familiar with AWS.
+
 # How to build the AWS AMI
 
     packer build template.json
