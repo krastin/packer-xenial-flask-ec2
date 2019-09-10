@@ -9,7 +9,7 @@ useradd flask
 echo "%flask ALL=NOPASSWD:ALL" > /etc/sudoers.d/flask
 chmod 0440 /etc/sudoers.d/flask
 
-# Add vagrant to sudo group
+# Add flask to sudo group
 usermod -a -G sudo flask
 
 # Install NFS
